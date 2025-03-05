@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hi</title>
+</head>
+<body>
+<div>
+    <table border="1">
+        <caption> Таблица машин</caption>
+        <th:block th:each="msg : ${messages}">
+            <tr>
+                <td>
+                    <h1 th:text="${msg}"></h1>
+                </td>
+            <tr>
+        </th:block>
+    </table>
+</div>
+</body>
+</html>
