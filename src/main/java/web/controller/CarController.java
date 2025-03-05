@@ -15,7 +15,7 @@ import java.util.List;
 @Controller()
 @RequestMapping("/cars")
 public class CarController {
-    @GetMapping("")
+    @GetMapping()
     public String printCars(@RequestParam(value = "count", required = false) Integer count, ModelMap model) {
         CarService carService = new CarServiseImpl();
         List<Car> cars = Arrays.asList(
