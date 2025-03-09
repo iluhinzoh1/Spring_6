@@ -23,8 +23,7 @@ public class User {
     public User() {
     }
 
-    public User(long id, String name, String surname, int age) {
-        this.id = id;
+    public User(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -76,9 +75,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
+        return "User{ name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", age=" + age +
                 '}';
