@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import web.Service.userServiceImp;
+import web.Service.userService;
 import web.models.User;
 
 import java.util.List;
@@ -14,7 +14,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private userServiceImp service;
+    private userService service;
 
     @GetMapping()
     public String getPersonDetails(Model model) {
